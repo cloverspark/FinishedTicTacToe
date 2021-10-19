@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/TopMidBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CenterBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/TopLeftBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/MidLeftBtn"
+        app:layout_constraintEnd_toStartOf="@+id/TopMidBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/TopRightBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/MidRightBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TopMidBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/CenterBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/MidLeftBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toStartOf="@+id/CenterBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/MidRightBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CenterBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/BottomLeftBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toStartOf="@+id/BottomMidBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MidLeftBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/BottomMidBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CenterBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/BottomRightBtn"
+        android:layout_width="87dp"
+        android:layout_height="68dp"
+        android:onClick="onClick"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlayersTxtBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BottomMidBtn"
+        app:layout_constraintTop_toBottomOf="@+id/MidRightBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/PlayersTxtBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player's X turn"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <Button
+        android:id="@+id/NewGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetOnClick"
+        android:text="New Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayersTxtBox"
+        app:layout_constraintVertical_bias="0.217" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
